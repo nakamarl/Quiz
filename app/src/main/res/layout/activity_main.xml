@@ -16,15 +16,15 @@
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent" android:paddingTop="50dp"
             android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="50dp">
         <Button
-                android:text="ノーマル"
+                android:text="@string/normal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/normal" android:layout_marginTop="80dp"/>
         <Button
-                android:text="ハード"
+                android:text="@string/hard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/hard" android:layout_marginTop="50dp"/>
         <Button
-                android:text="ランダム"
+                android:text="@string/no_order"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" android:id="@+id/no_order" android:layout_marginTop="50dp"/>
     </LinearLayout>
