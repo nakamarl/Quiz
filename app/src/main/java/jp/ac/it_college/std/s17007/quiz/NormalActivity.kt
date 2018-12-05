@@ -3,6 +3,7 @@ package jp.ac.it_college.std.s17007.quiz
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import kotlinx.android.synthetic.main.select_genre.*
 
 class NormalActivity : AppCompatActivity(){
@@ -23,6 +24,12 @@ class NormalActivity : AppCompatActivity(){
             "まいんくらふと")
         val adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,genre)
         genre_list.adapter = adapter
+
+        genre_list.setOnItemClickListener { parent, view, position, id ->
+            val name = parent.getItemAtPosition(position)
+            Toast.makeText(this,"selected $name \n start quiz!", Toast.LENGTH_LONG).show()
+            setContentView(R.layout.quiz)
+        }
 
     }
 }
